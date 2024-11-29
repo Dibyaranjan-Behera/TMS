@@ -81,14 +81,19 @@ body {
             <button id="closeSidebar" class="close-btn">&times;</button>
         </div>
         <div class="sidebar-content">
-        
-        
+         <%
+								    String successLogin = (String) session.getAttribute("successLogin");
+                        		
+								   
+								%>
+       
 <%
 	UserBean ub = (UserBean) session.getAttribute("userDetails");
 	if (ub != null) {
 	    out.println("<p><strong>Name:</strong> " + ub.getUname() + "</p>");
 	    out.println("<p><strong>Email:</strong> " + ub.getEmail() + "</p>");
 	    out.println("<p><strong>Gender:</strong> " + ub.getGender() + "</p>");
+	    
 	} else {
 	    out.println("User details are not available.");
 	}

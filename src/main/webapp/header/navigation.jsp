@@ -53,6 +53,7 @@
                         		
 								    if (successLogin != null) {
 								%>
+								
 								    <li class="nav-item">
 <!-- 								        <form action="details" method="post" style="display: inline;"> -->
 <!-- 								            <button id="sidebarToggle" type="submit" style="border:none; background:none" class="nav-link"> -->
